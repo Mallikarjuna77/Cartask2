@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> Update Car details here</h1><hr/><hr/>
+<div>
+<form method="POST" action="/update/{{CarName}}/">
+    <table id="carlist">
+        {% csrf_token %%}
+        {{form.as_table}}
+    </table>
+   <button type="submit">update</button>
+</form>
+</div>
+</body>
+</html>
